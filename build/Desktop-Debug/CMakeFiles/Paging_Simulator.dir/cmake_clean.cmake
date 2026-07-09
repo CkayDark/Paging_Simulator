@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Paging_Simulator_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/Paging_Simulator_autogen.dir/ParseCache.txt"
+  "Paging_Simulator_autogen"
+  "CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/event.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/event.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/fifo.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/fifo.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/main.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/main.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/mainwindow.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/mainwindow.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/mmu.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/mmu.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/pagetable.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/pagetable.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/process.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/process.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/simulator.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/simulator.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/tlb.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/tlb.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.o.d"
+  "Paging_Simulator"
+  "Paging_Simulator.pdb"
+  "Paging_Simulator_autogen/mocs_compilation.cpp"
+  "Paging_Simulator_autogen/timestamp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Paging_Simulator.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,9 @@
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/Paging_Simulator.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/install.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/Paging_Simulator_autogen_timestamp_deps.dir
+/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles/Paging_Simulator_autogen.dir
