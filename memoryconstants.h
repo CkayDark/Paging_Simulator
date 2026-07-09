@@ -10,8 +10,11 @@ namespace MemoryConfig {
     static constexpr unsigned int PAGE_NUM = VIRTUAL_MEMORY_SIZE/PAGE_SIZE;
     static constexpr unsigned int PAGE_FRAME_SIZE = 1024;
     static constexpr unsigned int PAGE_FRAME_NUM = RAM_SIZE/PAGE_FRAME_SIZE;
+
+    //Flags
     static constexpr unsigned int FRAME_TLB_FLAG = 0x01;
     static constexpr unsigned int FRAME_REFERENCED = 0x02;
+    static constexpr unsigned int FRAME_PRESENT = 0x04;
 }
 
 namespace Latency {
