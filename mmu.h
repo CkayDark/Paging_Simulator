@@ -16,6 +16,7 @@ private:
     TLB* tlb;
     Process* process;
     SystemClock* clock;
+    unsigned int next_tlb_victim;
 
 public:
     MMU(SystemClock* c);
@@ -45,6 +46,8 @@ public:
     };
 
     unsigned int translate(unsigned int virtual_address);
+
+    int findTlbReplacementIndex();
 };
 
 #endif // MMU_H

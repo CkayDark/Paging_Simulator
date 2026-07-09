@@ -1,6 +1,7 @@
 #include "mmu.h"
 
 MMU::MMU(SystemClock* c) : clock(c) {
+    this->next_tlb_victim = 0;
 }
 
 unsigned int MMU::translate(unsigned int virtual_address) {
@@ -26,38 +27,56 @@ unsigned int MMU::translate(unsigned int virtual_address) {
 
             this->clock->addTime(Latency::TLB_HIT);
 
-
             unsigned int page_frame_index = entry->getPage_frame_index();
             return (page_frame_index << 10) | offset;
         }
     }
 
+    this->clock->addTime(Latency::TLB_MISS);
+
+    if(pt->getEntries()[page_index]->getFrame_attributes()
+          & MemoryConfig::FRAME_PRESENT){
+
+        PageTableEntry* ptEntry = pt->getEntries()[page_index];
+        ptEntry->setFrame_attributes(ptEntry->getFrame_attributes()
+                                     | MemoryConfig::FRAME_REFERENCED);
+
+
+        TLBEntry* tlbEntry = this->tlb->getEntries()[this->findTlbReplacementIndex()];
+        tlbEntry->setPage_index(page_index);
+        tlbEntry->setPage_frame_index(ptEntry->getPage_frame_index());
+        tlbEntry->setFrame_attributes(ptEntry->getFrame_attributes()
+                                      | MemoryConfig::FRAME_TLB_FLAG);
+
+
+        unsigned int page_frame_index = tlbEntry->getPage_frame_index();
+        return (page_frame_index << 10) | offset;
+    }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    PageTableEntry* entry = pt->getEntries()[page_index];
-
-    entry->setFrame_attributes(entry->getFrame_attributes() | MemoryConfig::FRAME_TLB_FLAG);
-    entry->setFrame_attributes(entry->getFrame_attributes() | MemoryConfig::FRAME_REFERENCED);
-
-    unsigned int page_frame_index = entry->getPage_frame_index();
-    return page_frame_index << 10 | offset;
 }
+
+int MMU::findTlbReplacementIndex() {
+
+    unsigned int victim_index = this->next_tlb_victim;
+
+    this->next_tlb_victim = (this->next_tlb_victim + 1)
+                            % this->tlb->getSize();
+
+    return victim_index;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
