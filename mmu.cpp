@@ -26,7 +26,6 @@ unsigned int MMU::translate(unsigned int virtual_address) {
 
             this->clock->addTime(Latency::TLB_HIT);
 
-            this->translate(22);
 
             unsigned int page_frame_index = entry->getPage_frame_index();
             return (page_frame_index << 10) | offset;
