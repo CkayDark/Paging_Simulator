@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.cpp" "CMakeFiles/Paging_Simulator.dir/pagetable.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/pagetable.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.cpp" "CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.cpp" "CMakeFiles/Paging_Simulator.dir/process.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/process.cpp.o.d"
+  "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/ram.cpp" "CMakeFiles/Paging_Simulator.dir/ram.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/ram.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/simulator.cpp" "CMakeFiles/Paging_Simulator.dir/simulator.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/simulator.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/systemclock.cpp" "CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlb.cpp" "CMakeFiles/Paging_Simulator.dir/tlb.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/tlb.cpp.o.d"

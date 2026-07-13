@@ -3,6 +3,7 @@
 #include <QApplication>
 #include "simulator.h"
 #include "event.h"
+#include "fifo.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,8 +13,10 @@ int main(int argc, char *argv[])
 
 
 
-
-    Simulator simulator = Simulator();
+    SystemClock* clock = new SystemClock();
+    MMU* mmu = new MMU(clock);
+    IPagingAlgorithm* algo = new FIFO();
+    Simulator simulator = Simulator(mmu, algo);
     Event event1 = Event(1, 24.7, Event::PAGE_ACCESS);
     Event event2 = Event(2, 1.7, Event::MEMORY_WRITE);
     Event event3 = Event(3, 4.6, Event::PAGE_FAULT);

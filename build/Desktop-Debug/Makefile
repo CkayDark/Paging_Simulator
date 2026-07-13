@@ -416,6 +416,30 @@ process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/process.cpp.s
 .PHONY : process.cpp.s
 
+ram.o: ram.cpp.o
+.PHONY : ram.o
+
+# target to build an object file
+ram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/ram.cpp.o
+.PHONY : ram.cpp.o
+
+ram.i: ram.cpp.i
+.PHONY : ram.i
+
+# target to preprocess a source file
+ram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/ram.cpp.i
+.PHONY : ram.cpp.i
+
+ram.s: ram.cpp.s
+.PHONY : ram.s
+
+# target to generate assembly for a file
+ram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/ram.cpp.s
+.PHONY : ram.cpp.s
+
 simulator.o: simulator.cpp.o
 .PHONY : simulator.o
 
@@ -554,6 +578,9 @@ help:
 	@echo "... process.o"
 	@echo "... process.i"
 	@echo "... process.s"
+	@echo "... ram.o"
+	@echo "... ram.i"
+	@echo "... ram.s"
 	@echo "... simulator.o"
 	@echo "... simulator.i"
 	@echo "... simulator.s"

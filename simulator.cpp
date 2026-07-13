@@ -16,15 +16,15 @@ void Simulator::run() {
         Event currentEvent = events.top();
         events.pop();
 
-        if(currentEvent.getType() == Event::PAGE_ACCESS){
-            unsigned int physicalAdress
-                = this->mmu->translate(currentEvent.getVirtualAddress());
+        int result = this->mmu->translate(currentEvent.getVirtualAddress());
+
+        if(result == -1) {
+            unsigned int faultingPageIndex = this->mmu->getLastPageIndex();
+
+            unsigned int victimPage = this->algo->selectPageToEvict();
+
         }
 
-        std::cout << "ID: "<< this->events.top().getID()
-                  << " Timestamp: " << this->events.top().getTimestamp()
-                  << " Type: " << this->events.top().getType() << std::endl;
-        this->events.pop();
     }
 }
 

@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/process.cpp.o"
   "CMakeFiles/Paging_Simulator.dir/process.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/ram.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/ram.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/simulator.cpp.o"
   "CMakeFiles/Paging_Simulator.dir/simulator.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o"
