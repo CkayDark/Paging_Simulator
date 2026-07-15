@@ -2,8 +2,8 @@
 #define PROCESS_H
 #include "pagetable.h"
 
-class Process
-{
+class Process  {
+
 private:
     unsigned char process_id;
     PageTable* page_table;

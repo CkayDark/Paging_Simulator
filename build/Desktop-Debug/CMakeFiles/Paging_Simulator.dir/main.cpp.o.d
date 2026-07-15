@@ -405,4 +405,30 @@ CMakeFiles/Paging_Simulator.dir/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/deque \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/deque.tcc \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mmu.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlb.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlbentry.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/memoryconstants.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/systemclock.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/ram.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ios \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_ios.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_facets.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_facets.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_ios.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.h

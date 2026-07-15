@@ -4,25 +4,28 @@
 #include "simulator.h"
 #include "event.h"
 #include "fifo.h"
+#include "ram.h"
+#include "iostream"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
 
 
+    auto clock = std::make_unique<SystemClock>();
+    auto ram = std::make_unique<RAM>();
 
-    SystemClock* clock = new SystemClock();
-    MMU* mmu = new MMU(clock);
-    IPagingAlgorithm* algo = new FIFO();
-    Simulator simulator = Simulator(mmu, algo);
-    Event event1 = Event(1, 24.7, Event::PAGE_ACCESS);
-    Event event2 = Event(2, 1.7, Event::MEMORY_WRITE);
-    Event event3 = Event(3, 4.6, Event::PAGE_FAULT);
-    simulator.addEvent(event1);
-    simulator.addEvent(event2);
-    simulator.addEvent(event3);
+    //da interface, typ muss explizit angegeben werden
+    std::unique_ptr<IPagingAlgorithm> algo = std::make_unique<FIFO>();
+
+    auto mmu = std::make_unique<MMU>(clock.get(), ram.get(), algo.get());
+    Process* test_process = new Process();
+    mmu->setProcess(test_process);
+
+
+    Simulator simulator = Simulator(mmu.get(), algo.get());
+
 
     simulator.run();
 

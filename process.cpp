@@ -1,8 +1,14 @@
 #include "process.h"
 
-PageTable *Process::getPage_table() const
-{
+Process::Process() {
+
+    this->page_table = new PageTable();
+}
+
+
+
+PageTable *Process::getPage_table() const {
     return page_table;
 }
 
-Process::Process() {}
+

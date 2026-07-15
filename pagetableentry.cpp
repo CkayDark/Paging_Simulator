@@ -1,5 +1,11 @@
 #include "pagetableentry.h"
 
+PageTableEntry::PageTableEntry() {
+    this->frame_attributes = 0;
+    this->page_frame_index = 0;
+}
+
+
 unsigned char PageTableEntry::getFrame_attributes() const
 {
     return frame_attributes;
@@ -20,4 +26,4 @@ void PageTableEntry::setFrame_attributes(unsigned char newFrame_attributes)
     frame_attributes = newFrame_attributes;
 }
 
-PageTableEntry::PageTableEntry() {}
+

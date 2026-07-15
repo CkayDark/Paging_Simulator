@@ -2,8 +2,8 @@
 #define TLB_H
 #include "tlbentry.h"
 
-class TLB
-{
+class TLB {
+
 private:
     TLBEntry** entries;
     unsigned int size;

@@ -2,6 +2,7 @@
 
 MMU::MMU(SystemClock* c , RAM* ram, IPagingAlgorithm* algo) : clock(c), ram(ram) , algo(algo){
     this->next_tlb_victim = 0;
+    this->tlb = new TLB();
 }
 
 unsigned int MMU::translate(unsigned int virtual_address) {
@@ -24,8 +25,22 @@ unsigned int MMU::translate(unsigned int virtual_address) {
     }
 
 
+
+    if(frame_index != -1){
+        this->clock->addTime(Latency::TLB_HIT);
+        pt->getEntries()[page_index]->setFrame_attributes(
+            pt->getEntries()[page_index]->getFrame_attributes() | MemoryConfig::FRAME_REFERENCED
+            );
+        this->algo->notifyAccess(page_index);
+        return (frame_index << 10) | offset;
+    }
+
+
+
     this->clock->addTime(Latency::TLB_MISS);
     PageTableEntry* ptEntry = pt->getEntries()[page_index];
+
+
 
     //2. Page Table Hit (Bereits im RAM)
     if(ptEntry->getFrame_attributes() & MemoryConfig::FRAME_PRESENT){
@@ -39,6 +54,7 @@ unsigned int MMU::translate(unsigned int virtual_address) {
 
     //3. Page Fault (Nicht im RAM)
     this->clock->addTime(Latency::PAGE_FAULT);
+
 
     int freeFrameIndex = this->ram->findFreeFrame();
     //RAM frei?

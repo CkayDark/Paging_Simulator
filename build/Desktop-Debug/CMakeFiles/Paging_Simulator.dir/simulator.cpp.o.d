@@ -74,6 +74,16 @@ CMakeFiles/Paging_Simulator.dir/simulator.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mmu.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlb.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlbentry.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/memoryconstants.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/systemclock.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/ram.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ios \

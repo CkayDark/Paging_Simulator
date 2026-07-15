@@ -10,6 +10,7 @@
 #include "systemclock.h"
 #include "ram.h"
 #include "IPagingAlgorithm.h"
+#include "iostream"
 
 class MMU
 {
@@ -116,6 +117,8 @@ public:
      */
     void invalidateTLB(unsigned int page_index);
 
+
+    void setProcess(Process* p) {this->process = p; }
 };
 
 #endif // MMU_H
