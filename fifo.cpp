@@ -13,5 +13,8 @@ void FIFO::notifyAccess(unsigned int pageIndex) {
 }
 
 unsigned int FIFO::selectPageToEvict() {
-
+    int oldestPage = this->pages.front();
+    this->pages.pop();
+    this->in_queue[oldestPage] = false;
+    return oldestPage;
 }
