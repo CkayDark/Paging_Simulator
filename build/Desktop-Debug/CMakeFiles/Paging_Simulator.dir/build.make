@@ -230,19 +230,19 @@ CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.s"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlbentry.cpp -o CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.s
 
-CMakeFiles/Paging_Simulator.dir/fifo.cpp.o: CMakeFiles/Paging_Simulator.dir/flags.make
-CMakeFiles/Paging_Simulator.dir/fifo.cpp.o: /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.cpp
-CMakeFiles/Paging_Simulator.dir/fifo.cpp.o: CMakeFiles/Paging_Simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Paging_Simulator.dir/fifo.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paging_Simulator.dir/fifo.cpp.o -MF CMakeFiles/Paging_Simulator.dir/fifo.cpp.o.d -o CMakeFiles/Paging_Simulator.dir/fifo.cpp.o -c /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.cpp
+CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o: CMakeFiles/Paging_Simulator.dir/flags.make
+CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o: /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp
+CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o: CMakeFiles/Paging_Simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o -MF CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o.d -o CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o -c /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp
 
-CMakeFiles/Paging_Simulator.dir/fifo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paging_Simulator.dir/fifo.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.cpp > CMakeFiles/Paging_Simulator.dir/fifo.cpp.i
+CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp > CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.i
 
-CMakeFiles/Paging_Simulator.dir/fifo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paging_Simulator.dir/fifo.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.cpp -o CMakeFiles/Paging_Simulator.dir/fifo.cpp.s
+CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp -o CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.s
 
 CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o: CMakeFiles/Paging_Simulator.dir/flags.make
 CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o: /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/systemclock.cpp
@@ -272,6 +272,20 @@ CMakeFiles/Paging_Simulator.dir/ram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paging_Simulator.dir/ram.cpp.s"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/ram.cpp -o CMakeFiles/Paging_Simulator.dir/ram.cpp.s
 
+CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o: CMakeFiles/Paging_Simulator.dir/flags.make
+CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o: /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp
+CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o: CMakeFiles/Paging_Simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o -MF CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o.d -o CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o -c /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp
+
+CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp > CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.i
+
+CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp -o CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.s
+
 # Object files for target Paging_Simulator
 Paging_Simulator_OBJECTS = \
 "CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o" \
@@ -285,9 +299,10 @@ Paging_Simulator_OBJECTS = \
 "CMakeFiles/Paging_Simulator.dir/pagetable.cpp.o" \
 "CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o" \
 "CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.o" \
-"CMakeFiles/Paging_Simulator.dir/fifo.cpp.o" \
+"CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o" \
 "CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o" \
-"CMakeFiles/Paging_Simulator.dir/ram.cpp.o"
+"CMakeFiles/Paging_Simulator.dir/ram.cpp.o" \
+"CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o"
 
 # External object files for target Paging_Simulator
 Paging_Simulator_EXTERNAL_OBJECTS =
@@ -303,9 +318,10 @@ Paging_Simulator: CMakeFiles/Paging_Simulator.dir/process.cpp.o
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/pagetable.cpp.o
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/pagetableentry.cpp.o
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/tlbentry.cpp.o
-Paging_Simulator: CMakeFiles/Paging_Simulator.dir/fifo.cpp.o
+Paging_Simulator: CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/systemclock.cpp.o
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/ram.cpp.o
+Paging_Simulator: CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/build.make
 Paging_Simulator: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 Paging_Simulator: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -313,7 +329,7 @@ Paging_Simulator: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Paging_Simulator: /usr/lib/x86_64-linux-gnu/libGLX.so
 Paging_Simulator: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Paging_Simulator: CMakeFiles/Paging_Simulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Paging_Simulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Paging_Simulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Paging_Simulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

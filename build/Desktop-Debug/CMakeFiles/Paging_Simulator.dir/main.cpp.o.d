@@ -431,4 +431,5 @@ CMakeFiles/Paging_Simulator.dir/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.h
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h

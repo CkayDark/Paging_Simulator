@@ -200,6 +200,54 @@ Paging_Simulator_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator_autogen.dir/build.make CMakeFiles/Paging_Simulator_autogen.dir/build
 .PHONY : Paging_Simulator_autogen/fast
 
+AlgoFifo.o: AlgoFifo.cpp.o
+.PHONY : AlgoFifo.o
+
+# target to build an object file
+AlgoFifo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o
+.PHONY : AlgoFifo.cpp.o
+
+AlgoFifo.i: AlgoFifo.cpp.i
+.PHONY : AlgoFifo.i
+
+# target to preprocess a source file
+AlgoFifo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.i
+.PHONY : AlgoFifo.cpp.i
+
+AlgoFifo.s: AlgoFifo.cpp.s
+.PHONY : AlgoFifo.s
+
+# target to generate assembly for a file
+AlgoFifo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.s
+.PHONY : AlgoFifo.cpp.s
+
+AlgoSecondChance.o: AlgoSecondChance.cpp.o
+.PHONY : AlgoSecondChance.o
+
+# target to build an object file
+AlgoSecondChance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o
+.PHONY : AlgoSecondChance.cpp.o
+
+AlgoSecondChance.i: AlgoSecondChance.cpp.i
+.PHONY : AlgoSecondChance.i
+
+# target to preprocess a source file
+AlgoSecondChance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.i
+.PHONY : AlgoSecondChance.cpp.i
+
+AlgoSecondChance.s: AlgoSecondChance.cpp.s
+.PHONY : AlgoSecondChance.s
+
+# target to generate assembly for a file
+AlgoSecondChance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.s
+.PHONY : AlgoSecondChance.cpp.s
+
 Paging_Simulator_autogen/mocs_compilation.o: Paging_Simulator_autogen/mocs_compilation.cpp.o
 .PHONY : Paging_Simulator_autogen/mocs_compilation.o
 
@@ -247,30 +295,6 @@ event.s: event.cpp.s
 event.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/event.cpp.s
 .PHONY : event.cpp.s
-
-fifo.o: fifo.cpp.o
-.PHONY : fifo.o
-
-# target to build an object file
-fifo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/fifo.cpp.o
-.PHONY : fifo.cpp.o
-
-fifo.i: fifo.cpp.i
-.PHONY : fifo.i
-
-# target to preprocess a source file
-fifo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/fifo.cpp.i
-.PHONY : fifo.cpp.i
-
-fifo.s: fifo.cpp.s
-.PHONY : fifo.s
-
-# target to generate assembly for a file
-fifo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/fifo.cpp.s
-.PHONY : fifo.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -551,15 +575,18 @@ help:
 	@echo "... Paging_Simulator_autogen"
 	@echo "... Paging_Simulator_autogen_timestamp_deps"
 	@echo "... Paging_Simulator"
+	@echo "... AlgoFifo.o"
+	@echo "... AlgoFifo.i"
+	@echo "... AlgoFifo.s"
+	@echo "... AlgoSecondChance.o"
+	@echo "... AlgoSecondChance.i"
+	@echo "... AlgoSecondChance.s"
 	@echo "... Paging_Simulator_autogen/mocs_compilation.o"
 	@echo "... Paging_Simulator_autogen/mocs_compilation.i"
 	@echo "... Paging_Simulator_autogen/mocs_compilation.s"
 	@echo "... event.o"
 	@echo "... event.i"
 	@echo "... event.s"
-	@echo "... fifo.o"
-	@echo "... fifo.i"
-	@echo "... fifo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

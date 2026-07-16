@@ -1,4 +1,8 @@
 Paging_Simulator_autogen/timestamp: \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/CMakeLists.txt \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -7,8 +11,6 @@ Paging_Simulator_autogen/timestamp: \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/moc_predefs.h \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.cpp \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.h \
-	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.cpp \
-	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.h \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/main.cpp \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mainwindow.cpp \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mainwindow.h \

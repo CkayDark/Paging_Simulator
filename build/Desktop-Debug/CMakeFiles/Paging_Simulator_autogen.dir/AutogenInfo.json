@@ -209,6 +209,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h",
+			"MU",
+			"EWIEGA46WW/moc_AlgoFifo.cpp",
+			null
+		],
+		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h",
+			"MU",
+			"EWIEGA46WW/moc_AlgoSecondChance.cpp",
+			null
+		],
+		[
 			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h",
 			"MU",
 			"EWIEGA46WW/moc_IPagingAlgorithm.cpp",
@@ -218,12 +230,6 @@
 			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.h",
 			"MU",
 			"EWIEGA46WW/moc_event.cpp",
-			null
-		],
-		[
-			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.h",
-			"MU",
-			"EWIEGA46WW/moc_fifo.cpp",
 			null
 		],
 		[
@@ -352,12 +358,17 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.cpp",
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/fifo.cpp",
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.cpp",
 			"MU",
 			null
 		],

@@ -1,18 +1,19 @@
-#include "fifo.h"
+#include "AlgoFifo.h"
 #include "memoryconstants.h"
 
-FIFO::FIFO() {
+AlgoFifo::AlgoFifo() {
     this->in_queue.resize(MemoryConfig::PAGE_NUM, false);
 }
 
-void FIFO::notifyAccess(unsigned int pageIndex) {
+
+void AlgoFifo::notifyAccess(unsigned int pageIndex) {
     if(!this->in_queue.at(pageIndex)){
         this->in_queue[pageIndex] = true;
         this->pages.push(pageIndex);
     }
 }
 
-unsigned int FIFO::selectPageToEvict() {
+unsigned int AlgoFifo::selectPageToEvict() {
     int oldestPage = this->pages.front();
     this->pages.pop();
     this->in_queue[oldestPage] = false;

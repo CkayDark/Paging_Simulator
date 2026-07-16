@@ -33,9 +33,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         tlbentry.h tlbentry.cpp
         memoryconstants.h
         IPagingAlgorithm.h
-        fifo.h fifo.cpp
+        AlgoFifo.h AlgoFifo.cpp
         systemclock.h systemclock.cpp
         ram.h ram.cpp
+        AlgoSecondChance.h AlgoSecondChance.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Paging_Simulator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -3,12 +3,16 @@
 #include <QApplication>
 #include "simulator.h"
 #include "event.h"
-#include "fifo.h"
+#include "AlgoFifo.h"
+#include "AlgoSecondChance.h"
 #include "ram.h"
 #include "iostream"
 
+
+
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
+
     MainWindow w;
     w.show();
 
@@ -16,11 +20,14 @@ int main(int argc, char *argv[]) {
     auto clock = std::make_unique<SystemClock>();
     auto ram = std::make_unique<RAM>();
 
+    Process* test_process = new Process();
+
     //da interface, typ muss explizit angegeben werden
-    std::unique_ptr<IPagingAlgorithm> algo = std::make_unique<FIFO>();
+    std::unique_ptr<IPagingAlgorithm> algo
+        = std::make_unique<AlgoSecondChance>(test_process->getPage_table());
 
     auto mmu = std::make_unique<MMU>(clock.get(), ram.get(), algo.get());
-    Process* test_process = new Process();
+
     mmu->setProcess(test_process);
 
 
