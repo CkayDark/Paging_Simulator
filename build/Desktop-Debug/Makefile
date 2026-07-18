@@ -224,6 +224,30 @@ AlgoFifo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.s
 .PHONY : AlgoFifo.cpp.s
 
+AlgoLRU.o: AlgoLRU.cpp.o
+.PHONY : AlgoLRU.o
+
+# target to build an object file
+AlgoLRU.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.o
+.PHONY : AlgoLRU.cpp.o
+
+AlgoLRU.i: AlgoLRU.cpp.i
+.PHONY : AlgoLRU.i
+
+# target to preprocess a source file
+AlgoLRU.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.i
+.PHONY : AlgoLRU.cpp.i
+
+AlgoLRU.s: AlgoLRU.cpp.s
+.PHONY : AlgoLRU.s
+
+# target to generate assembly for a file
+AlgoLRU.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.s
+.PHONY : AlgoLRU.cpp.s
+
 AlgoSecondChance.o: AlgoSecondChance.cpp.o
 .PHONY : AlgoSecondChance.o
 
@@ -578,6 +602,9 @@ help:
 	@echo "... AlgoFifo.o"
 	@echo "... AlgoFifo.i"
 	@echo "... AlgoFifo.s"
+	@echo "... AlgoLRU.o"
+	@echo "... AlgoLRU.i"
+	@echo "... AlgoLRU.s"
 	@echo "... AlgoSecondChance.o"
 	@echo "... AlgoSecondChance.i"
 	@echo "... AlgoSecondChance.s"

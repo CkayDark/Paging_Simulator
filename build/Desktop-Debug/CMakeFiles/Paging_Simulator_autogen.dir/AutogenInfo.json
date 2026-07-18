@@ -215,6 +215,12 @@
 			null
 		],
 		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoLRU.h",
+			"MU",
+			"EWIEGA46WW/moc_AlgoLRU.cpp",
+			null
+		],
+		[
 			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h",
 			"MU",
 			"EWIEGA46WW/moc_AlgoSecondChance.cpp",
@@ -359,6 +365,11 @@
 	[
 		[
 			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoLRU.cpp",
 			"MU",
 			null
 		],
