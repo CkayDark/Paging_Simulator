@@ -3,7 +3,7 @@
 
 #include "IPagingAlgorithm.h"
 #include "pagetable.h"
-#include "memoryconstants.h"
+#include "vector"
 
 class AlgoNRU : public IPagingAlgorithm{
 
