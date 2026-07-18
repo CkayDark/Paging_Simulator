@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.o"
   "CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/AlgoNRU.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/AlgoNRU.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o"
   "CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o"

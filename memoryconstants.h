@@ -16,14 +16,21 @@ namespace MemoryConfig {
 
     // Flags
 
-    /** @brief Flag zur Kennzeichnung, dass ein Eintrag im TLB gültig ist. */
+    /** @brief TLB-Flag zur Kennzeichnung, dass ein Eintrag im TLB gültig ist. */
     static constexpr unsigned int FRAME_TLB_FLAG = 0x01;
 
-    /** @brief Referenz-Flag. Zeigt an, ob auf die Seite kürzlich zugegriffen wurde. */
+    /** @brief Referenz-Flag.
+     *  Zeigt an, ob auf die Seite kürzlich zugegriffen wurde. */
     static constexpr unsigned int FRAME_REFERENCED = 0x02;
 
-    /** @brief Present-Flag. Zeigt an, ob sich die Seite aktuell im physischen RAM befindet. */
+    /** @brief Present-Flag.
+     *  Zeigt an, ob sich die Seite aktuell im physischen RAM befindet. */
     static constexpr unsigned int FRAME_PRESENT = 0x04;
+
+    /** @brief Modified-Flag (Dirty-Bit).
+     *  Zeigt an, ob eine physische Seite im RAM
+     *  durch einen Schreibzugriff modifiziert wurde. */
+    static constexpr unsigned int FRAME_MODIFIED = 0x08;
 }
 
 

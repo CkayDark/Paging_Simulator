@@ -63,9 +63,10 @@ public:
      *    die TLB-Konsistenz gewahrt.
      *
      * @param virtual_address Die zu übersetzende virtuelle Adresse.
+     * @param is_write Schreibzugriff oder Lesezugriff?
      * @return Die berechnete physische Adresse oder -1 bei Fehlern.
      */
-    unsigned int translate(unsigned int virtual_address);
+    unsigned int translate(unsigned int virtual_address, bool is_write = false);
 
     /**
      * @brief Ermittelt den nächsten zu ersetzenden Index im TLB-Cache.

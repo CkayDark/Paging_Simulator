@@ -5,7 +5,7 @@ MMU::MMU(SystemClock* c , RAM* ram, IPagingAlgorithm* algo) : clock(c), ram(ram)
     this->tlb = new TLB();
 }
 
-unsigned int MMU::translate(unsigned int virtual_address) {
+unsigned int MMU::translate(unsigned int virtual_address, bool is_write) {
 
     PageTable* pt = this->process->getPage_table();
 
@@ -17,35 +17,30 @@ unsigned int MMU::translate(unsigned int virtual_address) {
     int frame_index = this->checkTLB(page_index);
     if(frame_index != -1){
         this->clock->addTime(Latency::TLB_HIT);
-        pt->getEntries()[page_index]->setFrame_attributes(
-            pt->getEntries()[page_index]->getFrame_attributes()
-            | MemoryConfig::FRAME_REFERENCED);
+        // Erst Standard-Flags holen
+        unsigned int attributes = pt->getEntries()[page_index]->getFrame_attributes()
+            | MemoryConfig::FRAME_REFERENCED;
+        // Wenn es ein Schreibzugriff ist, zusätzlich FRAME_MODIFIED setzen
+        if(is_write){
+            attributes |= MemoryConfig::FRAME_MODIFIED;
+        }
+        pt->getEntries()[page_index]->setFrame_attributes(attributes);
         this->algo->notifyAccess(page_index);
         return (frame_index << 10) | offset;
     }
-
-
-
-    if(frame_index != -1){
-        this->clock->addTime(Latency::TLB_HIT);
-        pt->getEntries()[page_index]->setFrame_attributes(
-            pt->getEntries()[page_index]->getFrame_attributes() | MemoryConfig::FRAME_REFERENCED
-            );
-        this->algo->notifyAccess(page_index);
-        return (frame_index << 10) | offset;
-    }
-
-
 
     this->clock->addTime(Latency::TLB_MISS);
     PageTableEntry* ptEntry = pt->getEntries()[page_index];
 
 
-
     //2. Page Table Hit (Bereits im RAM)
     if(ptEntry->getFrame_attributes() & MemoryConfig::FRAME_PRESENT){
-        ptEntry->setFrame_attributes(ptEntry->getFrame_attributes()
-                                     | MemoryConfig::FRAME_REFERENCED);
+        unsigned int attributes = ptEntry->getFrame_attributes()
+                                  | MemoryConfig::FRAME_REFERENCED;
+        if(is_write){
+            attributes |= MemoryConfig::FRAME_MODIFIED;
+        }
+        ptEntry->setFrame_attributes(attributes);
         this->updateTLB(page_index, ptEntry->getPage_frame_index(), ptEntry->getFrame_attributes());
         this->algo->notifyAccess(page_index);
         return (ptEntry->getPage_frame_index() << 10) | offset;
@@ -63,9 +58,13 @@ unsigned int MMU::translate(unsigned int virtual_address) {
         ptEntry->setPage_frame_index(freeFrameIndex);
         this->ram->mapFrame(freeFrameIndex, page_index);
 
-        ptEntry->setFrame_attributes(ptEntry->getFrame_attributes()
+        unsigned int attributes = ptEntry->getFrame_attributes()
                                      | MemoryConfig::FRAME_PRESENT
-                                     | MemoryConfig::FRAME_REFERENCED);
+                                     | MemoryConfig::FRAME_REFERENCED;
+        if(is_write){
+            attributes |= MemoryConfig::FRAME_MODIFIED;
+        }
+        ptEntry->setFrame_attributes(attributes);
 
         this->updateTLB(page_index, freeFrameIndex, ptEntry->getFrame_attributes());
         this->algo->notifyAccess(page_index);
@@ -87,9 +86,14 @@ unsigned int MMU::translate(unsigned int virtual_address) {
         ptEntry->setPage_frame_index(victimFrame);
         this->ram->mapFrame(victimFrame, page_index);
 
-        ptEntry->setFrame_attributes(ptEntry->getFrame_attributes()
-                                     | MemoryConfig::FRAME_PRESENT
-                                     | MemoryConfig::FRAME_REFERENCED);
+
+        unsigned int attributes = ptEntry->getFrame_attributes()
+                                  | MemoryConfig::FRAME_PRESENT
+                                  | MemoryConfig::FRAME_REFERENCED;
+        if(is_write){
+            attributes |= MemoryConfig::FRAME_MODIFIED;
+        }
+        ptEntry->setFrame_attributes(attributes);
 
         this->updateTLB(page_index, victimFrame, ptEntry->getFrame_attributes());
         this->algo->notifyAccess(page_index);

@@ -1,8 +1,7 @@
 #ifndef EVENT_H
 #define EVENT_H
 
-class Event
-{
+class Event {
 
 public:
     enum Type{PAGE_ACCESS, TLB_MISS, PAGE_FAULT, MEMORY_WRITE };

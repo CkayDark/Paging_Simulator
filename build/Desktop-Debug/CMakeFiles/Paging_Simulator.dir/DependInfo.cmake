@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Paging_Simulator_autogen/timestamp" "custom" "Paging_Simulator_autogen/deps"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp" "CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/AlgoFifo.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoLRU.cpp" "CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.o.d"
+  "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNRU.cpp" "CMakeFiles/Paging_Simulator.dir/AlgoNRU.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/AlgoNRU.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp" "CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/mocs_compilation.cpp" "CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o.d"
   "/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.cpp" "CMakeFiles/Paging_Simulator.dir/event.cpp.o" "gcc" "CMakeFiles/Paging_Simulator.dir/event.cpp.o.d"
