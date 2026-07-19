@@ -248,6 +248,30 @@ AlgoLRU.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.s
 .PHONY : AlgoLRU.cpp.s
 
+AlgoNFU_noaging.o: AlgoNFU_noaging.cpp.o
+.PHONY : AlgoNFU_noaging.o
+
+# target to build an object file
+AlgoNFU_noaging.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_noaging.cpp.o
+.PHONY : AlgoNFU_noaging.cpp.o
+
+AlgoNFU_noaging.i: AlgoNFU_noaging.cpp.i
+.PHONY : AlgoNFU_noaging.i
+
+# target to preprocess a source file
+AlgoNFU_noaging.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_noaging.cpp.i
+.PHONY : AlgoNFU_noaging.cpp.i
+
+AlgoNFU_noaging.s: AlgoNFU_noaging.cpp.s
+.PHONY : AlgoNFU_noaging.s
+
+# target to generate assembly for a file
+AlgoNFU_noaging.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_noaging.cpp.s
+.PHONY : AlgoNFU_noaging.cpp.s
+
 AlgoNRU.o: AlgoNRU.cpp.o
 .PHONY : AlgoNRU.o
 
@@ -629,6 +653,9 @@ help:
 	@echo "... AlgoLRU.o"
 	@echo "... AlgoLRU.i"
 	@echo "... AlgoLRU.s"
+	@echo "... AlgoNFU_noaging.o"
+	@echo "... AlgoNFU_noaging.i"
+	@echo "... AlgoNFU_noaging.s"
 	@echo "... AlgoNRU.o"
 	@echo "... AlgoNRU.i"
 	@echo "... AlgoNRU.s"

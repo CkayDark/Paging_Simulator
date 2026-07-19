@@ -66,10 +66,10 @@ include CMakeFiles/Paging_Simulator_autogen_timestamp_deps.dir/compiler_depend.m
 # Include the progress variables for this target.
 include CMakeFiles/Paging_Simulator_autogen_timestamp_deps.dir/progress.make
 
+CMakeFiles/Paging_Simulator_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/Paging_Simulator_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/Paging_Simulator_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/Paging_Simulator_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-CMakeFiles/Paging_Simulator_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
-CMakeFiles/Paging_Simulator_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 
 Paging_Simulator_autogen_timestamp_deps: CMakeFiles/Paging_Simulator_autogen_timestamp_deps
 Paging_Simulator_autogen_timestamp_deps: CMakeFiles/Paging_Simulator_autogen_timestamp_deps.dir/build.make
