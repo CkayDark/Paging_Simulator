@@ -1,12 +1,25 @@
 #ifndef IPAGINGALGORITHM_H
 #define IPAGINGALGORITHM_H
 
-
+/**
+ * @brief Abstrakte Schnittstelle für alle Seitenersetzungs-Algorithmen.
+ *
+ * Definiert die Schnittstelle, die jeder Verdrängungs-Algorithmus (z. B. FIFO, LRU, NRU)
+ * implementieren muss, um in der Simulationsumgebung verwendet werden zu können.
+ */
 class IPagingAlgorithm {
 
 public:
     virtual ~IPagingAlgorithm() = default;
 
+    /**
+     * @brief Wählt eine geladene virtuelle Seite zur Verdrängung aus dem RAM aus.
+     *
+     * Wird aufgerufen, wenn bei einem Page Fault kein freier Platz mehr im Hauptspeicher
+     * existiert und eine Seite auf die Festplatte ausgelagert werden muss.
+     *
+     * @return Die virtuelle Seitennummer der zu verdrängenden Seite.
+     */
     virtual unsigned int selectPageToEvict() = 0;
 
 
@@ -22,15 +35,6 @@ public:
     virtual void notifyAccess(unsigned int pageIndex) = 0;
 
 };
-
-
-
-
-
-
-
-
-
 
 
 #endif // IPAGINGALGORITHM_H

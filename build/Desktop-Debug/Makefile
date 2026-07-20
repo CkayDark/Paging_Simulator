@@ -272,6 +272,30 @@ AlgoNFU_noaging.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_noaging.cpp.s
 .PHONY : AlgoNFU_noaging.cpp.s
 
+AlgoNFU_withaging.o: AlgoNFU_withaging.cpp.o
+.PHONY : AlgoNFU_withaging.o
+
+# target to build an object file
+AlgoNFU_withaging.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_withaging.cpp.o
+.PHONY : AlgoNFU_withaging.cpp.o
+
+AlgoNFU_withaging.i: AlgoNFU_withaging.cpp.i
+.PHONY : AlgoNFU_withaging.i
+
+# target to preprocess a source file
+AlgoNFU_withaging.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_withaging.cpp.i
+.PHONY : AlgoNFU_withaging.cpp.i
+
+AlgoNFU_withaging.s: AlgoNFU_withaging.cpp.s
+.PHONY : AlgoNFU_withaging.s
+
+# target to generate assembly for a file
+AlgoNFU_withaging.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Paging_Simulator.dir/build.make CMakeFiles/Paging_Simulator.dir/AlgoNFU_withaging.cpp.s
+.PHONY : AlgoNFU_withaging.cpp.s
+
 AlgoNRU.o: AlgoNRU.cpp.o
 .PHONY : AlgoNRU.o
 
@@ -656,6 +680,9 @@ help:
 	@echo "... AlgoNFU_noaging.o"
 	@echo "... AlgoNFU_noaging.i"
 	@echo "... AlgoNFU_noaging.s"
+	@echo "... AlgoNFU_withaging.o"
+	@echo "... AlgoNFU_withaging.i"
+	@echo "... AlgoNFU_withaging.s"
 	@echo "... AlgoNRU.o"
 	@echo "... AlgoNRU.i"
 	@echo "... AlgoNRU.s"

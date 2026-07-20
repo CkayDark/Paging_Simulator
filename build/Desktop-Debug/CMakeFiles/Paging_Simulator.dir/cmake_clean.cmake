@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Paging_Simulator.dir/AlgoLRU.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/AlgoNFU_noaging.cpp.o"
   "CMakeFiles/Paging_Simulator.dir/AlgoNFU_noaging.cpp.o.d"
+  "CMakeFiles/Paging_Simulator.dir/AlgoNFU_withaging.cpp.o"
+  "CMakeFiles/Paging_Simulator.dir/AlgoNFU_withaging.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/AlgoNRU.cpp.o"
   "CMakeFiles/Paging_Simulator.dir/AlgoNRU.cpp.o.d"
   "CMakeFiles/Paging_Simulator.dir/AlgoSecondChance.cpp.o"

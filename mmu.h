@@ -2,54 +2,43 @@
 #define MMU_H
 #include "tlb.h"
 #include "process.h"
-#include "pagetable.h"
-#include "pagetableentry.h"
 #include "process.h"
-#include "memoryconstants.h"
-#include "pagetableentry.h"
 #include "systemclock.h"
 #include "ram.h"
 #include "IPagingAlgorithm.h"
-#include "iostream"
 
-class MMU
-{
+/**
+ * @brief Repräsentiert die Memory Management Unit (MMU) des Simulators.
+ *
+ * Steuert die Adressübersetzung von virtuellem zu physischem Speicher, verwaltet
+ * den TLB-Cache und interagiert bei Fehlzugriffen mit dem physischen RAM und
+ * den Paging-Algorithmen.
+ */
+class MMU {
 
 private:
-    TLB* tlb;
-    Process* process;
-    SystemClock* clock;
-    unsigned int next_tlb_victim;
-    unsigned int pageIndex;
-    RAM* ram;
-    IPagingAlgorithm* algo;
+    TLB* tlb;                         // Zeiger auf den Translation Lookaside Buffer (TLB).
+    Process* process;                 // Zeiger auf den aktuell geladenen Prozess.
+    SystemClock* clock;               // Zeiger auf das globale Systemzeit-Objekt zur Zeitmessung.
+    unsigned int next_tlb_victim;     // Index-Zeiger für das zyklische Ersetzen von TLB-Einträgen (FIFO).
+    unsigned int pageIndex;           // Speichert den virtuellen index der letzten Übersetzung.
+    RAM* ram;                         // Zeiger auf den simulierten physischen Hauptspeicher.
+    IPagingAlgorithm* algo;           // Zeiger auf den aktuell aktiven Verdrängungs-Algorithmus.
 
 public:
+    /**
+     * @brief Konstruktor der MMU-Klasse.
+     *
+     * Verknüpft die MMU mit der globalen Zeitbasis, dem RAM-Modell und dem
+     * gewählten Paging-Algorithmus.
+     *
+     * @param c Zeiger auf das SystemClock-Objekt zur Latenz-Zeitmessung.
+     * @param ram Zeiger auf den physischen Speicher zur Speicherplatzzuweisung.
+     * @param algo Zeiger auf die Schnittstelle des aktiven Paging-Algorithmus.
+     */
     MMU(SystemClock* c, RAM* ram, IPagingAlgorithm* algo);
 
-    ~MMU(){
-        if(process->getPage_table() != nullptr){
-            for(unsigned int i=0; i<process->getPage_table()->getSize(); i++){
-                delete process->getPage_table()->getEntries()[i];
-            }
 
-            delete[] process->getPage_table()->getEntries();
-            delete process->getPage_table();
-        }
-
-
-        if(tlb != nullptr){
-            for(unsigned int i=0; i<tlb->getSize(); i++){
-                delete tlb->getEntries()[i];
-            }
-            delete[] tlb->getEntries();
-            delete tlb;
-        }
-
-
-
-        delete this->process;
-    };
 
     /**
      * @brief Übersetzt eine virtuelle Adresse in eine physische Adresse.
@@ -59,8 +48,7 @@ public:
      * 2. Page-Table-Lookup (TLB-Miss): Prüft, ob die Seite im RAM präsent ist,
      *    und aktualisiert ggf. den TLB.
      * 3. Page Fault (RAM-Miss): Lädt die Seite von Platte. Falls der RAM voll ist,
-     *    wird über den Paging-Algorithmus eine Seite verdrängt (Eviction) und
-     *    die TLB-Konsistenz gewahrt.
+     *    wird über den Paging-Algorithmus eine Seite verdrängt (Eviction).
      *
      * @param virtual_address Die zu übersetzende virtuelle Adresse.
      * @param is_write Schreibzugriff oder Lesezugriff?
@@ -118,7 +106,11 @@ public:
      */
     void invalidateTLB(unsigned int page_index);
 
-
+    /**
+     * @brief Setzt den aktuell auszuführenden Prozess für die Adressübersetzung.
+     *
+     * @param p Zeiger auf den Prozess, dessen virtueller Adressraum übersetzt werden soll.
+     */
     void setProcess(Process* p) {this->process = p; }
 };
 

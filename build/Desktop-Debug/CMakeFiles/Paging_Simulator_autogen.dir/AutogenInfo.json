@@ -227,6 +227,12 @@
 			null
 		],
 		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_withaging.h",
+			"MU",
+			"EWIEGA46WW/moc_AlgoNFU_withaging.cpp",
+			null
+		],
+		[
 			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNRU.h",
 			"MU",
 			"EWIEGA46WW/moc_AlgoNRU.cpp",
@@ -387,6 +393,11 @@
 		],
 		[
 			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_noaging.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_withaging.cpp",
 			"MU",
 			null
 		],

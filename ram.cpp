@@ -1,4 +1,5 @@
 #include "ram.h"
+#include "memoryconstants.h"
 
 RAM::RAM() {
     this->frames.resize(MemoryConfig::PAGE_FRAME_NUM, -1);

@@ -26,8 +26,34 @@ private:
 
 
 public:
+
+    /**
+     * @brief Konstruktor der AlgoFifo-Klasse.
+     *
+     * Initialisiert das interne Lookup-Register (in_queue) auf die maximale
+     * Anzahl virtueller Seiten, um Zugriffe ohne Out-of-Bounds-Fehler prüfen zu können.
+     */
     AlgoFifo();
+
+    /**
+     * @brief Registriert den Zugriff auf eine virtuelle Seite im FIFO-Verfahren.
+     *
+     * Falls die Seite noch nicht im RAM liegt, wird sie hinten an die Warteschlange
+     * angehängt und im Lookup-Register als aktiv markiert. Wiederholte Zugriffe (Hits)
+     * werden ignoriert, um die ursprüngliche FIFO-Reihenfolge nicht zu beeinflussen.
+     *
+     * @param pageIndex Der Index der virtuellen Seite, auf die zugegriffen wird.
+     */
     void notifyAccess(unsigned int pageIndex);
+
+    /**
+     * @brief Wählt die am längsten geladene virtuelle Seite für die Verdrängung aus.
+     *
+     * Liest die vorderste Seite der Warteschlange aus, entfernt sie und setzt
+     * deren Status im Lookup-Register zurück auf inaktiv.
+     *
+     * @return Die virtuelle Seitennummer der zu verdrängenden Seite.
+     */
     unsigned int selectPageToEvict();
 
 };
