@@ -1,4 +1,5 @@
 #include "AlgoSecondChance.h"
+#include "memoryconstants.h"
 
 AlgoSecondChance::AlgoSecondChance(PageTable* pageTable)
     : pageTable(pageTable){

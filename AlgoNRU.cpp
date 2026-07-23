@@ -1,4 +1,6 @@
 #include "AlgoNRU.h"
+#include "memoryconstants.h"
+#include <vector>
 
 AlgoNRU::AlgoNRU(PageTable* pagetable) : pagetable(pagetable){}
 

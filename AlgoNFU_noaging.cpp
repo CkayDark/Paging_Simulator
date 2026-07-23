@@ -1,4 +1,5 @@
 #include "AlgoNFU_noaging.h"
+#include "memoryconstants.h"
 
 AlgoNFU_noAging::AlgoNFU_noAging(PageTable* pageTable) : pageTable(pageTable){
     this->counterForEachPage.resize(MemoryConfig::PAGE_NUM, 0);

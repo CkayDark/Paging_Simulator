@@ -388,4 +388,9 @@ CMakeFiles/Paging_Simulator.dir/Paging_Simulator_autogen/mocs_compilation.cpp.o:
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/EWIEGA46WW/../../../../event.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/EWIEGA46WW/../../../../IPagingAlgorithm.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/EWIEGA46WW/../../../../process.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/EWIEGA46WW/../../../../pagetable.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/EWIEGA46WW/../../../../pagetableentry.h

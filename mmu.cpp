@@ -1,4 +1,5 @@
 #include "mmu.h"
+#include "memoryconstants.h"
 
 MMU::MMU(SystemClock* c , RAM* ram, IPagingAlgorithm* algo) : clock(c), ram(ram) , algo(algo){
     this->next_tlb_victim = 0;

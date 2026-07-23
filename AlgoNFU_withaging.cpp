@@ -1,4 +1,5 @@
 #include "AlgoNFU_withaging.h"
+#include "memoryconstants.h"
 
 AlgoNFU_withAging::AlgoNFU_withAging(PageTable* pageTable)
     : pageTable(pageTable){

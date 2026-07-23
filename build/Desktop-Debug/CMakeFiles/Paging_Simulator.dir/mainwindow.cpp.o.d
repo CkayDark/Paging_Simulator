@@ -388,6 +388,11 @@ CMakeFiles/Paging_Simulator.dir/mainwindow.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/include/./ui_mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
@@ -404,6 +409,38 @@ CMakeFiles/Paging_Simulator.dir/mainwindow.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStatusBar \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstatusbar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/systemclock.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/ram.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mmu.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlb.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlbentry.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/simulator.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/queue \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/deque \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/deque.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/memoryconstants.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoLRU.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_noaging.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_withaging.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNRU.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h

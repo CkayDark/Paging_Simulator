@@ -1,4 +1,5 @@
 #include "pagetable.h"
+#include "memoryconstants.h"
 
 PageTableEntry **PageTable::getEntries() const {
     return entries;

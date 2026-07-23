@@ -1,5 +1,10 @@
 /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mainwindow.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/build/Desktop-Debug/Paging_Simulator_autogen/moc_predefs.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

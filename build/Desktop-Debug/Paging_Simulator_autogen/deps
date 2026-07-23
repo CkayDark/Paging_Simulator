@@ -1,6 +1,14 @@
 Paging_Simulator_autogen/timestamp: \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.cpp \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoLRU.cpp \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoLRU.h \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_noaging.cpp \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_noaging.h \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_withaging.cpp \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNFU_withaging.h \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNRU.cpp \
+	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoNRU.h \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.cpp \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h \
 	/home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/CMakeLists.txt \

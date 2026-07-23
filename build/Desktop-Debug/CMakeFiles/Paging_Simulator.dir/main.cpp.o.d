@@ -388,6 +388,11 @@ CMakeFiles/Paging_Simulator.dir/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
@@ -400,7 +405,6 @@ CMakeFiles/Paging_Simulator.dir/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/simulator.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/event.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/queue \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/deque \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h \
@@ -409,13 +413,10 @@ CMakeFiles/Paging_Simulator.dir/main.cpp.o: \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/mmu.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlb.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/tlbentry.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/process.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetable.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/pagetableentry.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/memoryconstants.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/systemclock.h \
   /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/ram.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/IPagingAlgorithm.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h \
+  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ios \
@@ -430,6 +431,4 @@ CMakeFiles/Paging_Simulator.dir/main.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_ios.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoFifo.h \
-  /home/ckay/Code/Betriebsysteme/Projekt/Paging_Simulator/AlgoSecondChance.h
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc

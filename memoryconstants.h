@@ -7,7 +7,7 @@
  */
 namespace MemoryConfig {
 
-    static constexpr unsigned int RAM_SIZE = 1048576;
+    static constexpr unsigned int RAM_SIZE = 16384;
     static constexpr unsigned int PAGE_SIZE = 1024;
     static constexpr unsigned int VIRTUAL_MEMORY_SIZE = 16777216;
     static constexpr unsigned int PAGE_NUM = VIRTUAL_MEMORY_SIZE/PAGE_SIZE;
